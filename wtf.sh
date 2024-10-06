@@ -576,7 +576,7 @@ apt install rclone -y
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "${REPO}cfg_conf_js/rclone.conf"
 cd /bin
-git clone  https://github.com/LunaticTunnel/wondershaper.git
+git clone  https://github.com/nixy-pro/wondershaper.git
 cd wondershaper
 sudo make install
 cd
