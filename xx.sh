@@ -4,7 +4,7 @@
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/LunaticTunnel/izin/master/ip"
+data_ip="https://raw.githubusercontent.com/nixy-pro/izin/main/ip"
 izin_scripted() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
